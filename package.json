@@ -2,9 +2,11 @@
   "name": "pmeter",
   "version": "1.0.0",
   "description": "Pmeter is a function performance meter",
-  "main": "app.js",
+  "main": "lib/app.js",
+  "typings": "lib/app.d.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "tsw": "ts-node-dev ./src/app.ts",
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
@@ -24,5 +26,18 @@
   "homepage": "https://github.com/iagocalazans/pmeter#readme",
   "dependencies": {
     "chalk": "^4.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.21",
+    "@typescript-eslint/eslint-plugin": "^4.13.0",
+    "@typescript-eslint/parser": "^4.13.0",
+    "eslint": "^7.18.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "ts-node-dev": "^1.1.1",
+    "typescript": "^4.1.3"
   }
 }
