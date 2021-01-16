@@ -1,0 +1,28 @@
+{
+  "name": "pmeter",
+  "version": "1.0.0",
+  "description": "Pmeter is a function performance meter",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/iagocalazans/pmeter.git"
+  },
+  "keywords": [
+    "meter",
+    "performance",
+    "log",
+    "measure"
+  ],
+  "author": "iago.calazans@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iagocalazans/pmeter/issues"
+  },
+  "homepage": "https://github.com/iagocalazans/pmeter#readme",
+  "dependencies": {
+    "chalk": "^4.1.0"
+  }
+}
