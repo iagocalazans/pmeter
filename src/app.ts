@@ -34,7 +34,7 @@ const observer = new PerformanceObserver((list, obs) => {
 
 observer.observe({ entryTypes: ['measure'], buffered: true })
 
-const pmbind = (fn: Function, ...params: any[]) => {
+const spingMark = (fn: Function, ...params: any[]) => {
   const startDate = Date.now()
   const beforeMemUsage: NodeJS.MemoryUsage = process.memoryUsage()
   const before = process.cpuUsage()
@@ -68,4 +68,4 @@ const pmbind = (fn: Function, ...params: any[]) => {
   return res
 }
 
-export { pmbind }
+export { spingMark }

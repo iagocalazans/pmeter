@@ -1,24 +1,24 @@
-# Performance Meter
-pmeter is a function performance meter.
+# SpingAge - Performance Meter
+SpingAge is a simple function performance meter.
 
 ## How to use
 
 ### This is a sample express server running pmeter at some of it functions.
 If you use "import"
 ```
-import { pmbind } from 'pmeter';
+import { spingMark } from 'spingage';
 ```
 If you use "require"
 ```
 const express = require('express');
 const app = express();
 
-const pmbind = require('pmeter').pmbind;
+const spingMark = require('spingage').spingMark;
 
 app.get('/', (req, res) => {
-    pmbind(myLoopOneParam, 5000);
+    spingMark(myLoopOneParam, 5000);
 
-    pmbind(myLoopMultipleParams, 3000, 5000);
+    spingMark(myLoopMultipleParams, 3000, 5000);
 
     res.status(201).send({ some: { crazy: 'Object' }})
 })
@@ -53,14 +53,14 @@ app.listen(3000, () => {
 Just input your parameters separateds by comma and deconstruct them on the function.
 
 ```
-pmbind(function, ...params);
+spingMark(function, ...params);
 ```
 
 ### You can measure more complex functions too
 For more complex functions, call them as anonymous functions retuns.
 
 ```
-pmbind(() => function(...params));
+spingMark(() => function(...params));
 ```
 
 ### This is how it will be printed

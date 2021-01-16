@@ -1,7 +1,7 @@
 {
-  "name": "pmeter",
+  "name": "spingage",
   "version": "1.0.0",
-  "description": "Pmeter is a function performance meter",
+  "description": "Spingage is a function performance meter",
   "main": "lib/app.js",
   "typings": "lib/app.d.js",
   "scripts": {
